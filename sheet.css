@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Adjust for better content alignment */
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #000, #3a4452);
+}
+
+.calculator {
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 20px; /* Rounded rectangle for modern look */
+    background: #0401011a; /* Slight transparency */
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+    display: inline-block;
+}
+
+input {
+    color: #fff;
+    width: 320px;
+    border: none; /* Cleaner look */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    font-size: 1.5em;
+    text-align: right;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #07f723;
+    opacity: 0.7; /* Subtle placeholder */
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-shadow: -2px -5px 15px rgba(255, 255, 255, 0.2), 2px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 5px 20px gold;
+}
+
+.eql {
+    background-color: orange;
+    color: #000;
+    box-shadow: 0px 5px 15px rgba(255, 140, 0, 0.8);
+}
+
+.func {
+    background-color: greenyellow;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(173, 255, 47, 0.8);
+}
+
+header, footer {
+    text-align: center; /* Improved layout alignment */
+    margin: 30px 0; /* Consistent spacing */
+    color: orange;
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em; /* Slightly smaller for footer */
+}
+h5, h6, p {
+    font-size: 1em;
+    color: greenyellow;
+    padding: 1px;
+    margin: 5px 0;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: inset 20px 5px 15px rgba(161, 22, 22, 0.3);
+}
+.func:active {
+    transform: scale(1.2);
+    box-shadow: inset 20px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.eql:active {
+    transform: scale(3.0);
+    box-shadow: inset 20px 5px 15px rgba(0, 0, 0, 0.3);
+}
